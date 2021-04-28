@@ -1,0 +1,14 @@
+@import "assets/scss/mixins";
+
+.root {
+  min-height: 50vh;
+  padding: 3rem;
+
+  .paper {
+    padding: 3rem;
+
+    @include respond-to(sm) {
+      padding: 1.5rem 0.5rem;
+    }
+  }
+}

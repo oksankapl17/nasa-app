@@ -1,0 +1,30 @@
+@import "../../assets/scss/mixins";
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: transparent url(https://habrastorage.org/webt/a_/zt/rk/a_ztrk2brwsjr4yulezqx9f268o.jpeg) no-repeat center / cover;
+  min-height: 50vh;
+
+  @include respond-to(sm) {
+    min-height: 30vh;
+  }
+
+  .logo {
+    @include respond-to(sm) {
+      max-width: 15vw;
+    }
+  }
+
+  .heading {
+    flex: 1;
+
+    h1 {
+      @include respond-to(sm) {
+        font-size: 18px;
+      }
+    }
+  }
+}
